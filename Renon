@@ -1,0 +1,15 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("KAIDO HUB", "DarkTheme")
+
+local Tab = Window:NewTab("???")
+local Section = Tab:NewSection("???")
+
+Section:UpdateSection("???")
+
+Section:NewButton("Tereport", "Tereport", Tereport()
+    print("Clicked")
+end)
+
+Section:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.G, function()
+	print("You just clicked the bind")
+end)
